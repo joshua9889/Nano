@@ -1,0 +1,57 @@
+<md-grid-list md-cols="5" md-gutter="1em" md-row-height="1:1">
+    
+    <md-grid-tile>
+        <md-card style="width:100%;">
+            <md-card-header>
+                <md-card-avatar>
+                    <md-icon class="md-avatar-icon"></md-icon>
+                </md-card-avatar>
+                <md-card-header-text>
+                <span class="md-title">create user?</span>
+                    <span class="md-subhead">create user?</span>
+                </md-card-header-text>
+            </md-card-header>
+            <md-card-actions layout="row">
+                <md-button class="md-primary md-raised" ng-click="createUser()">Create</md-button>
+            </md-card-actions>
+        </md-card>
+    </md-grid-tile>
+
+    <md-grid-tile ng-repeat="user in existingUsers">
+
+        <md-card style="width:100%;">
+            <md-card-header>
+                <md-card-avatar>
+                    <md-icon class="md-avatar-icon"></md-icon>
+                </md-card-avatar>
+                <md-card-header-text>
+                <span class="md-title">{{user.username}}</span>
+                    <span class="md-subhead">{{user.username}}</span>
+                </md-card-header-text>
+            </md-card-header>
+            <!-- <md-card-title>
+                <md-card-title-text>
+                <span class="md-headline">{{user.username}}</span>
+                <span class="md-subhead">Card subheader</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <p>
+                    Card content
+                </p>
+            </md-card-content> -->
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button class="md-primary md-raised" ng-click="login(user.username)">Login</md-button>
+                <md-card-icon-actions>
+                <md-button class="md-icon-button md-warn" aria-label="icon" ng-click="deleteGuest(user.username)">
+                    <i class="fas fa-trash"></i>
+                </md-button>
+                </md-card-icon-actions>
+            </md-card-actions>
+            
+            </md-card>
+
+    </md-grid-tile>    
+
+</md-grid-list>
+

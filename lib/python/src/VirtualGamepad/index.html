@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>FusionController 1.0</title>
+    <meta name="author" content="Justin Mathews">
+    <meta name="viewport" content="width=device-width initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="css/editor.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="shortcut icon" type="image/ico" href="misc/favicon.ico"/>
+</head>
+
+<body>  
+    <script language="JavaScript" >    
+        var trimmed = String(document.location.origin).slice(7);
+        var ip = trimmed.slice(0, trimmed.indexOf(':'));
+        ip += ':9080';
+        document.write('<center><img class="camera" src=http://' + ip + '/?action=stream /></center>')    
+    </script>
+    
+    <text class="telemetry_string" id="telemetry"></text>    
+    
+    <script src="js/simpleGame.js"></script>
+    <script src="js/virtualjoystick.js"></script>
+    <script src="js/commands.js"></script> 
+    
+    <img class="mri-logo" src="misc/BXL_Robotics_Logo_Gray.png"> </img>
+    
+    
+</body>

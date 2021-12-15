@@ -1,0 +1,163 @@
+#===================================================================================
+# mkdocs.yml - Input file for mkdocs processor to generate  Fusion Documentation
+#===================================================================================
+# This file defines the pages and structure for the Fusion Documentation suite. The
+# individual pages are in markdown (.md) format and are converted to html by mkdocs
+#===================================================================================
+# Revision History:
+# 16-Jun-2020 <jwa> - Added new pages for troubleshooting and updated content
+# 09-Apr-2020 <hah> - Added new pages to documentation suite
+# 01-Apr-2020 <jwa> - Modified from the original by aligning columns for readability
+#   and eventual modification
+#
+#===================================================================================
+#
+site_name: 'Fusion Documentation Suite'
+site_url: http://BoxlightRobotics.com
+site_author: Boxlight Robotics
+#theme_dir: fusion_theme
+use_directory_urls: true
+
+#===============================================================================
+# TABLE OF PAGES TO BE PROCESSED
+#===============================================================================
+# 
+
+pages:
+    - 'Home' :
+        - Home                              : index.md
+        - Getting Started Guide             : Getting_Started_Topic.md
+        - Fusion Controller Guide           : Fusion_Controller_Topic.md
+        - Web Interface Guide               : Web_Interface_Topic.md
+        - Blockly Topic                     : Blockly_Topic.md
+        - Editor Topic                      : Editor_Topic.md
+        - Diagnostic Tool                   : Diagnostic_Tool.md
+        - Data Logging Tool                 : Data_Logging_Tool.md
+        - Robot Building Instructions       : Robot_Building_Topic.md
+        - Missing Items                     : Missing_Items.md
+        - Connect USB Power                 : Connect_USB_Power.md
+        - Power On                          : Power_On.md
+        - Power Off                         : Power_Off.md
+        - Find/Connect FusionAP             : AP_Find.md
+        - Accessing Web Interface           : Accessing_Web_Interface.md
+        - Create Account                    : Account_Create.md
+        - Edit Account                      : Account_Edit.md
+        - Delete Account                    : Account_Delete.md
+        - Connecting Battery                : Connect_Battery.md
+        - Charge Battery                    : Charge_Battery.md
+        - Connect Windows                   : AP_Windows.md
+        - Connect Mac                       : AP_Mac.md
+        - Connect Linux                     : AP_Linux.md
+        - Connect iOS                       : AP_iOS.md
+        - Connect Android                   : AP_Android.md
+        - Change Fusion AP                  : AP_Change.md
+        - Restore Fusion AP                 : AP_Restore.md
+        - Connect to Internet               : Connect_Internet.md
+        - Update Fusion                     : Update.md
+        - Auto Start Program                : Program_Autostart.md
+    
+        - Blockly                           : Blockly.md
+        - Editor                            : Editor.md
+            
+        - On Board LEDs                     : On_Board_LED.md
+        - Digital Ports                     : Digital_Ports.md
+        - Analog Ports                      : Analog_Ports.md
+        - I2C Ports                         : I2C_Ports.md
+        - Motor Ports                       : Motor_Ports.md
+        - Servo Ports                       : Servo_Ports.md
+        - HDMI Port                         : HDMI.md
+        - AV RCA Port                       : AV_RCA.md
+        - USB Hub                           : USB_Hub.md
+        - Wi-Fi Hub                         : WiFi_Hub.md
+        - Ethernet Port                     : Ethernet_Port.md
+        - SD Card                           : SD_Card.md
+        
+        - Sensor Reference                  : Sensor_Topic.md
+        - Program Control Button (45-2002)  : Sensor_Program_Control_Button.md
+        - Rate Gyro (45-2004)               : Sensor_Rate_Gyro.md
+        - Optical Distance Sensor (45-2006) : Sensor_Optical_Distance_Sensor.md
+        - Touch Sensor (45-2007)            : Sensor_Touch_Sensor.md
+        - Light Sensor (45-2015)            : Sensor_Light_Sensor.md
+        - Magnet Sensor (45-2020)           : Sensor_Magnet_Sensor.md
+        - Compass (45-2003)                 : Sensor_Compass.md
+        - Integrating Gyro (45-2005)        : Sensor_Integrating_Gyro.md
+        - Range Sensor (45-2008)            : Sensor_Range_Sensor.md
+        - IR Locator 360° (45-2009)         : Sensor_IR_Locator_360.md
+        - Sound Generator (45-2016)         : Sensor_Sound_Generator.md
+        - IR Seeker V3 (45-2017)            : Sensor_IR_Seeker_V3.md
+        - Color Sensor (45-2018)            : Sensor_Color_Sensor.md
+        - Color Beacon (45-2019)            : Sensor_Color_Beacon.md
+        
+        - Basic Fusion Control              : Basic_Fusion-Control.md
+        - Basic Move Robot                  : Basic_Move-Robot.md
+        - Basic Rotate Robot                : Basic_Rotate-Robot.md
+        - Intermediate Fusion Control       : Int_Fusion-Control.md
+        - Motors                            : Int_Motors.md
+        - Servos                            : Int_Servos.md
+        - USB Gamepad                       : Blk_usbGamepad.md
+        - Virtual Gamepad                   : Blk_VirtualGamepad.md
+        - Analog/Digital Sensors            : Blk_Analog_Digital.md
+        - Compass (45-2003)                 : Blk_Compass.md
+        - Rate Gyro (45-2004)               : Blk_Rate_Gyro.md
+        - Integrating Gyro (45-2005)        : Blk_Integrating_Gyro.md
+        - Optical Distance Sensor (45-2006) : Blk_Optical_Distance_Sensor.md
+        - Touch Sensor (45-2007)            : Blk_Touch_Sensor.md
+        - Range Sensor (45-2008)            : Blk_Range_Sensor.md
+        - IR Locator 360° (45-2009)         : Blk_IR_Locator_360.md
+        - Light Sensor (45-2015)            : Blk_Light_Sensor.md
+        - Sound Generator (45-2016)         : Blk_Sound_Generator.md
+        - IR Seeker V3 (45-2017)            : Blk_IR_Seeker_V3.md
+        - Color Sensor (45-2018)            : Blk_Color_Sensor.md
+        - Color Beacon (45-2019)            : Blk_Color_Beacon.md
+        - Magnetic Sensor (45-2020)         : Blk_Magnetic_Sensor.md
+        - Time                              : time.md
+        - File Handling                     : Blk_File_Handling.md
+        - Logic                             : Default_Logic.md
+        - Loops                             : Default_Loops.md
+        - Text                              : Default_Text.md
+        - Lists                             : Default_Lists.md
+        - Variables                         : Default_Variables.md
+        
+        - Constants                         : Py_Constants.md
+        - Fusion Driver                     : Py_Driver.md
+        - Motors                            : Py_Motors.md
+        - Servos                            : Py_Servos.md
+        - USB Gamepad                       : Py_usbGamepad.md
+        - Virtual Gamepad                   : Py_VirtualGamepad.md
+        - Compass (45-2003)                 : Py_Compass.md
+        - Rate Gyro (45-2004)               : Py_Rate_Gyro.md
+        - Integrating Gyro (45-2005)        : Py_Integrating_Gyro.md
+        - Optical Distance Sensor (45-2006) : Py_Optical_Distance_Sensor.md
+        - Touch Sensor (45-2007)            : Py_Touch_Sensor.md
+        - Range Sensor (45-2008)            : Py_Range_Sensor.md
+        - IR Locator 360° (45-2009)         : Py_IR_Locator_360.md
+        - Light Sensor (45-2015)            : Py_Light_Sensor.md
+        - Sound Generator (45-2016)         : Py_Sound_Generator.md
+        - IR Seeker V3 (45-2017)            : Py_IR_Seeker_V3.md
+        - Color Sensor (45-2018)            : Py_Color_Sensor.md
+        - Color Beacon (45-2019)            : Py_Color_Beacon.md
+        - Magnetic Sensor (45-2020)         : Py_Magnetic_Sensor.md
+        
+        - Core Control Modules              : Core_Control_Topic.md
+        - Core Motor Controller             : Core_Motor_Controller.md
+        - Core Servo Controller             : Core_Servo_Controller.md
+        - Core Device Interface             : Core_Device_Interface.md
+        - Core Legacy Module                : Core_Legacy_Module.md
+        - Core Power Distribution Module    : Core_Power_Distribution_Module.md
+        
+        - Core Control Driver               : CoreControlDriver.md
+        - Core Device Interface             : Blk_Core_Device_Interface.md
+        - Core Device Interface             : Py_Core_Device_Interface.md
+        - Core Legacy Module                : Blk_Core_Legacy_Module.md
+        - Core Legacy Module                : Py_Core_Legacy_Module.md
+        - Core Motor Controller             : Blk_Core_Motor_Controller.md
+        - Core Motor Controller             : Py_Core_Motor_Controller.md
+        - Core Servo Controller             : Blk_Core_Servo_Controller.md
+        - Core Servo Controller             : Py_Core_Servo_Controller.md
+        
+        - Troubleshooting Step 1            : Trouble_Step1.md
+        - Troubleshooting Step 3            : Trouble_Step3.md
+        - Troubleshooting Step 4            : Trouble_Step4.md
+       
+        - About Modern Robotics Inc         : About.md
+        

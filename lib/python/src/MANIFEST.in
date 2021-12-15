@@ -1,0 +1,3 @@
+recursive-include Fusion/examples *
+recursive-include CoreControl/examples *
+recursive-include VirtualGamepad *
