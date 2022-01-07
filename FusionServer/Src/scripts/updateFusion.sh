@@ -11,3 +11,5 @@
 #sudo curl --silent --show-error https://raw.githubusercontent.com/Modern-Robotics/Fusion/master/update.sh | sudo bash
 
 sudo git pull
+cd /usr/Fusion/FusionServer/Build
+sudo npm i --production --unsafe-perm
