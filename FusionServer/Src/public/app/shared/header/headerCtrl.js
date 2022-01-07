@@ -320,7 +320,7 @@ angular
 
         };
 
-        $scope.updateFUsion = function(){
+        $scope.updateFusion = function(){
 
             // Action accepted
             appFactory.updateFusion().then(function (data) {
