@@ -255,6 +255,30 @@ Blockly.Blocks['fusion_basic_forward'] = {
     }
 };
 
+Blockly.Blocks['fusion_basic_happy'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField(new Blockly.FieldImage("assets/img/fusion/HappyFace.jpg", imageW, imageH, "Forward"));
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour(180);
+        this.setTooltip('Drive forward for 1 second then stop.');
+        this.setHelpUrl(origin + doc_path +'/Basic_Move-Robot/#forward');
+    }
+};
+
+Blockly.Blocks['fusion_basic_dog'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField(new Blockly.FieldImage("assets/img/fusion/DogBark.jpg", imageW, imageH, "Forward"));
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour(180);
+        this.setTooltip('Drive forward for 1 second then stop.');
+        this.setHelpUrl(origin + doc_path +'/Basic_Move-Robot/#forward');
+    }
+};
+
 Blockly.Blocks['fusion_basic_backward'] = {
     init: function () {
         this.appendDummyInput()

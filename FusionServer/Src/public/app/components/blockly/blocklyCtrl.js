@@ -245,6 +245,12 @@ angular
                     '<block type="fusion_basic_left90"></block>' +
                     '<block type="fusion_basic_left180"></block>' +
                     '</category>' +
+                    '<category name="Display" colour="120">' +
+                    '<block type="fusion_basic_happy"></block>' +
+                    '</category>' +
+                    '<category name="Sounds" colour="120">' +
+                    '<block type="fusion_basic_dog"></block>' +
+                    '</category>' +
                     '</xml>';
 
             } else if (mode == 'intermediate') {
